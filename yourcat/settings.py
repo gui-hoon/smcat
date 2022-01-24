@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -91,7 +91,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cat', # 수정
         'USER': 'root',
-        'PASSWORD': '2330514s', # 수정
+        'PASSWORD': 'Rnlgns9710@', # 수정
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -132,6 +132,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL = 'users.User'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
